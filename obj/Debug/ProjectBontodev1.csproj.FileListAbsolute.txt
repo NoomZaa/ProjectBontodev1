@@ -3,9 +3,11 @@ E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\bin\Debug\ProjectBontodev1.exe
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\bin\Debug\ProjectBontodev1.pdb
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.csproj.AssemblyReference.cache
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.csproj.SuggestedBindingRedirects.cache
-E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.Form1.resources
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.Properties.Resources.resources
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.csproj.GenerateResource.cache
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.csproj.CoreCompileInputs.cache
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.exe
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.pdb
+E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.Form1.resources
+E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.main.resources
+E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.MainUser.resources

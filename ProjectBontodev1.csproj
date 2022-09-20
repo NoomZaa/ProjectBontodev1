@@ -58,6 +58,30 @@
     <Compile Include="main.Designer.cs">
       <DependentUpon>main.cs</DependentUpon>
     </Compile>
+    <Compile Include="MainUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainUser.Designer.cs">
+      <DependentUpon>MainUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Book Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Book Information.Designer.cs">
+      <DependentUpon>Manage Book Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Manage Customer Information.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Manage Customer Information.Designer.cs">
+      <DependentUpon>Manage Customer Information.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Order Book.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Order Book.Designer.cs">
+      <DependentUpon>Order Book.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Project1BontodevDataSet.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -67,6 +91,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainUser.resx">
+      <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

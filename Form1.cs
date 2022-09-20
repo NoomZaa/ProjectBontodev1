@@ -49,56 +49,66 @@ namespace ProjectBontodev1
 
         private void btnLogin_Click(object sender, EventArgs e)
         {
+            
 
             string strSQL = "select * from tb_CutomerLogin where Username = '" + txtUser.Text.Trim() + "' and Password = '"+txtPassword.Text.Trim()+"'";
             da = new SqlDataAdapter(strSQL, conObj);
-            DataTable dtbl = new DataTable();
-            da.Fill(dtbl);
+            DataTable dt = new DataTable();
+            da.Fill(dt);
 
-            if(dtbl.Rows.Count > 0)
+            
+
+
+
+            if (dt.Rows.Count > 0)
             {
-                main showmain = new main();
-                this.Hide();
-                showmain.Show();
+                string status = "select status from tb_CutomerLogin where Username = '" + txtUser.Text.Trim() + "'";
+                SqlDataAdapter dastatus = new SqlDataAdapter(status, conObj);
+                DataTable dtstatus = new DataTable();
+                dastatus.Fill(dtstatus);
+
+                string statusUser = dtstatus.Rows[0]["status"].ToString();
+
+                if (statusUser == "admin")
+                {
+                    main showmain = new main();
+                    this.Hide();
+                    showmain.Show();
+                }
+                else if(statusUser == "user")
+                {
+                    MainUser showmainuser = new MainUser();
+                    this.Hide();
+                    showmainuser.Show();
+                   
+                }
             }
             else if (txtUser.Text == "")
             {
                 MessageBox.Show("Enter The Username", "Login");
-                txtUser.Text = "";
                 txtPassword.Text = "";
                 txtUser.Focus();
             }
             else if (txtPassword.Text == "")
             {
                 MessageBox.Show("Enter The Password", "Login");
-                txtUser.Text = "";
-                txtPassword.Text = "";
-                txtUser.Focus();
+                txtPassword.Focus();
             }
             else
             {
-                MessageBox.Show("กรุณาติดต่อผู้พัฒนาโปรแกรม", "Login",MessageBoxButtons.OK,MessageBoxIcon.Error);
+                txtUser.Text = "";
+                txtPassword.Text = "";
+                txtUser.Focus();
+                MessageBox.Show("กรุณาตรวจสอบ User และ Password", "Login",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }
 
+        }
 
-            //string username, password;
-            //username = txtUser.Text;
-            //password = txtPassword.Text;
-
-            //string strSQL = "select * from CustomerID where Username = '" + txtUser.Text + "' and '" + txtPassword.Text + "' ";
-            //SqlDataAdapter qu = new SqlDataAdapter(strSQL,strCon);
-            //DataTable dt = new DataTable();
-            //qu.Fill(dt);
-
-            //if(dt.Rows.Count>0)
-            //{
-            //    MessageBox.Show("เข้าสู่ระบบเรียบร้อย", "Login");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("กรุณาตรวจสอบ User และ Password", "Login");
-            //}
-            
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            txtUser.Text = "";
+            txtPassword.Text = "";
+            txtUser.Focus();
         }
     }
 }
