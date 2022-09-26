@@ -98,6 +98,9 @@
     <EmbeddedResource Include="MainUser.resx">
       <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage Customer Information.resx">
+      <DependentUpon>Manage Customer Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>

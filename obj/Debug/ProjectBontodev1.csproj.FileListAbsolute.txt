@@ -11,3 +11,4 @@ E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.pdb
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.Form1.resources
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.main.resources
 E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.MainUser.resources
+E:\Bontodev C#\ProjectBontodev1\ProjectBontodev1\obj\Debug\ProjectBontodev1.Manage_Customer_Information.resources
