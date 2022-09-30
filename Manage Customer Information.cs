@@ -41,12 +41,13 @@ namespace ProjectBontodev1
         private void btnSearch_Click(object sender, EventArgs e)
         {
             SqlConnection condb = new SqlConnection("Data Source=NOOMZA;Initial Catalog=Project1Bontodev; Integrated Security=True");
-            sda = new SqlDataAdapter(@"select * from tb_Customers where FName like  '%" + txtSearch.Text.Trim() + "%' OR LName '%" + txtSearch.Text.Trim() + "%' ", condb);
+            sda = new SqlDataAdapter("select * from tb_Customers where (FName like '%" + txtSearch.Text.Trim() + "%' or LName like '%" + txtSearch.Text.Trim() + "%' or Customer_id like '%" + txtSearch.Text.Trim() + "%' or Email like '%" + txtSearch.Text.Trim() + "%' or Tel like '%" + txtSearch.Text.Trim() + "%' )  ", condb);
             dt = new DataTable();
             sda.Fill(dt);
             dataGridView1.DataSource = dt;
             condb.Close();
 
         }
+
     }
 }

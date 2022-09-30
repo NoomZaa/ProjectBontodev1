@@ -68,6 +68,7 @@
             this.txtPassword.PasswordChar = '*';
             this.txtPassword.Size = new System.Drawing.Size(111, 20);
             this.txtPassword.TabIndex = 3;
+  
             // 
             // btnLogin
             // 
@@ -107,6 +108,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.Load += new System.EventHandler(this.Form1_Load);
+            this.Enter += new System.EventHandler(this.btnLogin_Click);
             this.ResumeLayout(false);
             this.PerformLayout();
 
