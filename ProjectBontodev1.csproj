@@ -98,6 +98,9 @@
     <EmbeddedResource Include="MainUser.resx">
       <DependentUpon>MainUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Manage Book Information.resx">
+      <DependentUpon>Manage Book Information.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Manage Customer Information.resx">
       <DependentUpon>Manage Customer Information.cs</DependentUpon>
     </EmbeddedResource>

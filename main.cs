@@ -29,5 +29,11 @@ namespace ProjectBontodev1
         {
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Manage_Book_Information showManage_Book_Information = new Manage_Book_Information();
+            showManage_Book_Information.Show();
+        }
     }
 }
