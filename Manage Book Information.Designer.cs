@@ -141,6 +141,7 @@
             this.btnAdd.TabIndex = 10;
             this.btnAdd.Text = "เพิ่ม";
             this.btnAdd.UseVisualStyleBackColor = true;
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // btnDelete
             // 
@@ -150,6 +151,7 @@
             this.btnDelete.TabIndex = 11;
             this.btnDelete.Text = "ลบ";
             this.btnDelete.UseVisualStyleBackColor = true;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 
@@ -159,6 +161,7 @@
             this.btnEdit.TabIndex = 12;
             this.btnEdit.Text = "แก้ไข";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // txtPrice
             // 
